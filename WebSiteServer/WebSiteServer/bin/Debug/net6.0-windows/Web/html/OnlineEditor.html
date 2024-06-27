@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf8'>
+<title>Обработчик изображений</title>
+<link rel="stylesheet" type="text/css" href="OnlineEditorCSS.css">
+</head>
+<body>
+<div class="Header"><h2>Башка</h2></div>
+<div class="Core">
+	<div class="StandardBlock">
+		пункты меню
+	</div>
+	<div class="TitlezContainer">
+		<div class="HalfColumn"><h3>Изображение для обработки</h3></div>
+		<div class="HalfColumn"><h3>Результат обработки</h3></div>
+	</div>
+	<div class="PicturezContainer row">
+		<div class="HalfColumn">			
+			<div class="IncomingPictureContainer" id="PictureWindow1">
+				<h2>Перетащите картинку сюда</h2>
+				<img class="AnyPicture" id="picture1OfWindow1" src="">
+			</div>
+		</div>	
+		<div class="HalfColumn">
+			<div class="IncomingPictureContainer" id="PictureWindow2">
+				<img class="AnyPicture" id="picture1OfWindow2" src="">
+			</div>
+		</div>
+	</div>
+	<div class="StandardBlock">
+		<div class="LittleColumn">
+			<div class="TitleBlock">Доступные фильтры</div>
+			<div class="TitleBlock">
+				<select name="selectedFilterz" class="FilterzList" id="selectorOfFilterz1" size="6">
+					<option value="0">Amplifier</option>
+					<option value="1">GrayzDestroyer</option>
+					<option value="2">ProportionalAmplifier</option>
+					<option value="3">GrayzAmplifier</option>
+					<option value="4">MinimumsOnesDestroyer</option>
+					<option value="5">MinimumzDestroyer</option>
+					<option value="6">GrayzAbsorber</option>
+					<option value="7">Absorber</option>
+					<option value="8">BorderzFinderHorizontal</option>
+					<option value="9">BorderzFinderVertical</option>
+					<option value="10">ColorzApproximatorHorizontal</option>
+					<option value="11">ColorzApproximatorVertical</option>
+					<option value="12">YUVToRGB</option>
+					<option value="13">RGBToYUV</option>
+					<option value="14">GaussSmoother</option>
+					<option value="15">SobelsOperator</option>
+					<option value="16">SobelsGradient</option>
+					<option value="17">FullSobelMatrix</option>
+					<option value="18">BorderzAmplifier</option>
+					<option value="19">AmbiguitiezDestroyer</option>
+					<option value="20">SharrsOperator</option>
+				</select>
+			</div>	
+			<div class="TitleBlock">
+				<input type="button" class="AnyButton" id="SelectFilterButton1" value="Выбрать">
+			</div>
+		</div>
+		<div class="LittleColumn">
+			<div class="TitleBlock">Выбранные фильтры</div>
+			<div class="TitleBlock">
+				<textarea class="HintWindow" id="SelectedFilterzList" readonly=true></textarea>
+			</div>
+			<div class="TitleBlock">
+				<input type="button" class="AnyButton" id="ClearAllSelectedFilterzButton" value="Очистить">
+			</div>
+		</div>
+		<div class="LittleColumn">
+			<div class="TitleBlock">Подсказка</div>
+			<div class ="TitleBlock">
+				<textarea class="HintWindow" id="FilterzHintWindow1" readonly=true>Подсказка</textarea>
+			</div>
+			<div class="TitleBlock">
+				<input type="button" class="AnyButton" id="sendPicture1Button" value="Обработать">
+			</div>
+		</div>
+		<div class="LittleColumn">
+			<div class="TitleBlock">Дополнительные настройки</div>
+			<div class ="TitleBlock">
+				<textarea class="TextField" id="lowerScopeTextBox">Нижний порог</textarea>
+			</div>
+			<div class="TitleBlock">
+				<textarea class="TextField" id="upperScopeTextBox">Верхний порог</textarea>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="footer">тест</footer>
+<script type="text/javascript" src="OnlineEditorScript.js"></script>
+</body>
+</html>

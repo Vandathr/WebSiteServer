@@ -1,0 +1,119 @@
+body{
+background-color: RGB(181, 181, 242);
+margin: 0;
+}
+
+.Header{
+min-height: 150px;
+text-align:center;
+background-color: RGB(255, 255, 255);
+border: 1px solid RGB(0, 0, 0);
+}
+
+.Core{
+	width: 100%;
+	min-height: 1000px;
+	border: 1px solid RGB(0, 0, 0);
+}
+
+.TitlezContainer{
+	width: 100%;
+	min-height: 30px;	
+	border: 1px solid RGB(0, 0, 0);
+	overflow: hidden;
+	vertical-align: top;
+	clear: both;
+}
+
+.PicturezContainer{
+	width: 100%;	
+	border: 1px solid RGB(0, 0, 0);
+	overflow: hidden;
+	vertical-align: top;
+	clear: both;
+}
+
+.HalfColumn{
+	width: 49%;
+	height: 100%;
+	border: 1px solid RGB(0, 0, 0);
+	text-align: center;
+	vertical-align: middle;
+	float: left;	
+}
+
+.StandardBlock{
+	width: 100%;
+	min-height: 30px;
+	border: 1px solid RGB(0, 0, 0);
+	overflow: hidden;
+}
+
+.TitleBlock{
+	width: 100%;
+	min-height: 30px;
+	border: 1px solid RGB(0, 0, 0);
+	overflow: hidden;
+	text-align: center;
+	vertical-align: middle;	
+}
+
+.IncomingPictureContainer{
+	text-align: center;
+	vertical-align: middle;
+	height: 360px;
+	width: 640px;
+	background-color: RGB(255, 255, 255);
+	border: 1px solid RGB(0, 0, 0);
+	margin:0 auto;
+}
+
+.AnyPicture{
+	width: 100%;
+}
+
+.LittleColumn{
+	border: 1px solid RGB(0, 0, 0);
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+}
+
+.FilterzList{
+	width: 200px;
+	min-height: 200px;
+	border: 1px solid RGB(0, 0, 0);
+}
+
+.HintWindow{
+	resize: None;
+	width: 200px; 
+	height: 200px;
+}
+
+.TextField{
+	resize: None;
+	width: 200px; 
+	height: 50px;
+}
+
+.AnyButton{
+	width: 150px;
+	height: 30px;
+	
+}
+
+.footer{
+	min-height: 150px;
+	text-align: center;
+	color: RGB(255, 255, 255);
+	background-color: RGB(0, 0, 0);
+	border: 1px solid RGB(0, 0, 0);
+}
+
+row::after{
+	content:"";
+	display:table;
+	clear:both;
+}
+
